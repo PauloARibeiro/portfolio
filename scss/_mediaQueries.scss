@@ -1,0 +1,291 @@
+@media (max-width: 1000px){
+  #portfolio{
+    .portfolio-content{
+      display: block;
+
+      .portfolio-img{
+        width: 100%;
+        padding-right: 0px;
+
+        &:nth-child(1), &:nth-child(3){
+          padding-right: 0px;
+        }
+
+        .portfolio-overlay{
+          display: none;
+        }
+        .portfolio-button{
+          display: none;
+        }
+      }
+    }
+   }
+}
+@media (max-width: 900px){
+  #other-stuff{
+    #other-stuff-holder {
+      .other-content{
+        // display: block;
+        div{
+          width: 100%;
+        }
+        .other-text{
+          width: 100%;
+          img{
+            // margin-bottom: 15px;
+            // width: 25%;
+          }
+          h3{
+            font-size: 2.1rem;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 868px){
+  #other-stuff {
+    #other-stuff-holder{
+       .other-content{
+         div {
+          .other-overlay {
+             display: none;
+          }
+          span{
+            display: none;
+          }
+          img{
+            cursor: pointer;
+            &:nth-child(4){
+              width: 50%;
+              transform: translate(50%);
+              margin-top: 15px;
+            }
+          }
+         }
+       }
+    }
+  }
+  // CONTACT TRIANGLE THING
+  #contact{
+    .triangle-other{
+      border-left: 80px solid transparent;
+      border-right: 80px solid transparent;
+      border-top: 80px solid #E6E6E6;
+    }
+  }
+}
+@media (max-width: 768px){
+  .spacing{
+    height: 7.5vw;
+  }
+  // HAMBURGER HOLDER
+  #hamburger-holder{
+    #hamburger{
+      display: block;
+    }
+  }
+  // NAV BAR
+  nav{
+    display: none;
+  }
+  // INTRO SECTION
+  #intro{
+    .container{
+      h4{
+        margin-left: 4px;
+      }
+    }
+  }
+  // SERVICES CONTENT
+  #services-holder{
+    text-align: center;
+    display: block;
+
+    .service-content{
+      max-width: 100%;
+
+      &:nth-child(1){
+        margin-bottom: 30px;
+      }
+    }
+  }
+  // CONTACT
+  #contact{
+    .container{
+      width: 100%;
+    }
+    form{
+      input[type="submit"]{
+        left: unset;
+        transform: unset;
+        position: unset;
+        width: 100%;
+      }
+    }
+  }
+  #more-info .holder{
+    width: 100%;
+    padding: 10vw 8vw 8vw 8vw;
+  }
+}
+
+@media (max-width: 720px){
+  #about-me-holder{
+    display: block;
+
+    #about-me-info, #about-me-picture{
+      width: 100%;
+    }
+
+    #about-me-info{
+      margin-bottom: 30px;
+    }
+  }
+  #other-stuff {
+    #other-stuff-holder{
+       .other-content{
+         div{
+           img{
+             &:nth-child(4){
+               width: 60%;
+               transform: translate(30%);
+               margin-top: 15px;
+             }
+           }
+          }
+        }
+      }
+    }
+}
+
+@media (max-width: 650px){
+  #hamburger-holder #hamburger{
+    right: 25px;
+  }
+  #parallax{
+    #parallax-content{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      grid-gap: 30px;
+
+      .fab{
+        justify-self: center;
+      }
+    }
+  }
+
+  #other-stuff {
+    #other-stuff-holder{
+       .other-content{
+         display: block;
+       }
+     }
+   }
+
+  // CONTACT TRIANGLE THING
+  #contact{
+    .triangle-other{
+      border-left: 65px
+ solid transparent;
+    border-right: 65px solid transparent;
+    border-top: 65px solid #E6E6E6;
+    }
+  }
+
+  #more-info .holder{
+    width: 100%;
+    padding: 13vw 8vw 8vw 8vw;
+  }
+}
+
+@media (max-width: 500px){
+  // SERVICE TITLE
+  .section-title{
+    h1{
+      font-size: 3rem;
+    }
+  }
+  // SERVICES CONTENT
+  #services-holder{
+    .service-content{
+      h3{
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+  #other-stuff{
+    #other-stuff-holder{
+      .other-content{
+        .other-text {
+          h3 {
+            font-size:  1.8rem;
+          }
+        }
+      }
+    }
+  }
+
+  // CONTACT TRIANGLE THING
+  #contact{
+    .triangle-other{
+      border-left: 55px
+ solid transparent;
+    border-right: 55px solid transparent;
+    border-top: 55px solid #E6E6E6;
+    }
+  }
+}
+
+@media (max-width: 450px){
+  .section-title{
+    .square, .circle{
+      width: 65px;
+      height: 65px;
+      top: 5%;
+    }
+
+    .triangle {
+      transform: translate(-50%, 0%);
+      border-left: 30px solid transparent;
+      border-right: 30px solid transparent;
+      border-bottom: 60px solid $light-red;
+    }
+  }
+  #more-info .holder{
+    width: 100%;
+    padding: 20vw 8vw 8vw 8vw;
+  }
+  #more-info .holder h1{
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 368px){
+  #intro{
+    .container{
+      h1{
+        font-size: 10vw;
+      }
+    }
+  }
+  // SERVICE TITLE
+  .section-title{
+    h1{
+      font-size: 2.5rem;
+    }
+  }
+  // SERVICES CONTENT
+  #services-holder{
+    .service-content{
+      h3{
+        font-size: 1.5rem;
+      }
+    }
+  }
+  #more-info .holder h1{
+    font-size: 2rem;
+  }
+}

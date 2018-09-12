@@ -1,0 +1,29 @@
+@mixin easeInOut{
+  transition: all 0.3s ease-in-out;
+}
+
+@mixin easeInOutSlow{
+  transition: all 0.4s ease-in-out;
+}
+
+@mixin easeInOutSuperSlow{
+  transition: all 2.2s ease-in-out;
+}
+
+@mixin easeOut{
+  transition: all 0.2s ease-in-out;
+}
+
+@keyframes fade {
+    0%{
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+
+.fade{
+  animation: fade 1s ease-in-out forwards;
+}
