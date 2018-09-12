@@ -691,7 +691,10 @@ nav {
   #contact .triangle-other {
     border-left: 55px solid transparent;
     border-right: 55px solid transparent;
-    border-top: 55px solid #E6E6E6; } }
+    border-top: 55px solid #E6E6E6; }
+  #social-media .container {
+    padding-top: 5vw;
+    padding-bottom: 5vw; } }
 
 @media (max-width: 450px) {
   .section-title .square, .section-title .circle {

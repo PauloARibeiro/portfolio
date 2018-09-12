@@ -264,7 +264,13 @@ class MoreInfo {
       <div class="under-bar"></div>
       <h4 class="description">Description</h4>
       </div>
-      <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui perferendis eos expedita neque alias laboriosam consequatur dignissimos quibusdam et iusto officia quos ipsum, earum deleniti aliquid fuga? Soluta nostrum dolore inventore ea ipsa, ut excepturi nobis totam velit, veniam aut ad repudiandae, obcaecati magni aliquam, pariatur nisi sit. Officiis, maiores.</span>
+      <span>
+      XDom Design was one of my first websites. At this time I was learning flexbox and CSS grid (they're awesome). It's a single page example of a business website.
+
+      <br>I used AOS which is an on scroll library, that's how I got the website to have the cool scroll animations.
+
+      <br>It's got a fixed nav bar with smooth scrolling when users click on a link, it's responsive and works on all devices.
+      </span>
       <h1 class="technologies">Technologies</h1>
       <div id="parallax-content">
       <i class="fab fa-html5 fa-5x text-shadow"></i>
@@ -282,7 +288,11 @@ class MoreInfo {
       <div class="under-bar"></div>
       <h4 class="description">Description</h4>
       </div>
-      <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui perferendis eos expedita neque alias laboriosam consequatur dignissimos quibusdam et iusto officia quos ipsum, earum deleniti aliquid fuga? Soluta nostrum dolore inventore ea ipsa, ut excepturi nobis totam velit, veniam aut ad repudiandae, obcaecati magni aliquam, pariatur nisi sit. Officiis, maiores.</span>
+      <span>
+        This website is a photographer portfolio, I made it for one of my friends.
+        <br>It's a very simple and clean website, nothing too crazy about it, but it showcases what's important which is his work.
+        <br>It's got a nice custom made image gallery modal and it's responsive.
+      </span>
       <h1 class="technologies">Technologies</h1>
       <div id="parallax-content">
       <i class="fab fa-html5 fa-5x text-shadow"></i>
@@ -300,7 +310,17 @@ class MoreInfo {
       <div class="under-bar"></div>
       <h4 class="description">Description</h4>
       </div>
-      <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui perferendis eos expedita neque alias laboriosam consequatur dignissimos quibusdam et iusto officia quos ipsum, earum deleniti aliquid fuga? Soluta nostrum dolore inventore ea ipsa, ut excepturi nobis totam velit, veniam aut ad repudiandae, obcaecati magni aliquam, pariatur nisi sit. Officiis, maiores.</span>
+      <span>
+        Shirt Logo is an e-commerce site. Everything built from scratch.
+        <br><br>
+        <li>User Creation</li>
+        <li>Edit user info (name, address, profile imgage, etc...)</li>
+        <li>Password reset</li>
+        <li>List of items (related items, popular items)</li>
+        <li>Item filtering by color, size, and price</li>
+        <li>Cart system for guests and registered users</li>
+        <li>Favorites list</li>
+      </span>
       <h1 class="technologies">Technologies</h1>
       <div id="parallax-content">
       <i class="fab fa-html5 fa-5x text-shadow"></i>
