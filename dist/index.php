@@ -142,7 +142,7 @@
           </span>
           <span>Get in touch.</span>
           <!-- SOCIAL MEDIA CONTENT -->
-          <a href="contact" target="_blank" class="envelope">
+          <a href="contact" target="_blank" class="envelope"> 
             <i class="fas fa-envelope fa-2x"></i>
           </a>
           <a href="https://github.com/PauloARibeiro" target="_blank">

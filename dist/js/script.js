@@ -360,4 +360,5 @@ window.addEventListener("click",(e) =>{
   }else if (e.target == modal){
     moreInfo.Hide();
   }
-});
+}); 
+ 
