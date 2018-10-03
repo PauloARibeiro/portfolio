@@ -167,6 +167,12 @@ class MediaQueries {
 
 class CallSmoothScroll {
   constructor() {
+    // THIS IS FOR THE ENVELOPE ICON IN THE ABOUT ME SECTION
+    this.envelope = document.querySelector('.envelope');
+    this.envelope.addEventListener('click', (e) =>{
+      e.preventDefault();
+      this.GetSelectedTarget(this.envelope.href);
+    });
     // THIS IS FOR THE NAV LINKS
     this.targets = document.querySelectorAll('nav a');
     //THIS WILL LOOP THROUGH ALL THE NAV LINKS
