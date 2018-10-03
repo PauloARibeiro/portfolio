@@ -145,7 +145,7 @@
           <a href="contact" target="_blank" class="envelope"> 
             <i class="fas fa-envelope fa-2x"></i>
           </a>
-          <a href="https://github.com/PauloARibeiro" target="_blank">
+          <a href="https://github.com/PauloARibeiro" target="_blank"> 
             <i class="fab fa-github-square fa-2x"></i>
           </a>
           <a href="" target="_blank">
