@@ -265,6 +265,7 @@ class MoreInfo {
       this.img.src = "img/x-dom-static.jpg";
       this.holder.querySelector('.content').innerHTML = `
       <a href="XDomDesign/index.html">View Page</a>
+      <a href="https://github.com/PauloARibeiro/XDom-Design" target="_blank">Source Code</a>
       <div class="title">
       <h1 >XDom Design</h1>
       <div class="under-bar"></div>
@@ -289,6 +290,7 @@ class MoreInfo {
       this.img.src = "img/zito-static.jpg";
       this.holder.querySelector('.content').innerHTML = `
       <a href="Zito/index.html">View Page</a>
+      <a href="https://github.com/PauloARibeiro/luis-photographer" target="_blank">Source Code</a>
       <div class="title">
       <h1 >Luis Fernandes Photographer</h1>
       <div class="under-bar"></div>
@@ -311,6 +313,7 @@ class MoreInfo {
       this.img.src = "img/shirt-logo-static.jpg";
       this.holder.querySelector('.content').innerHTML = `
       <a href="shirtlogo/public/index.php">View Page</a>
+      <a href="https://github.com/PauloARibeiro/Shirt-Logo" target="_blank">Source Code</a>
       <div class="title">
       <h1 >Shirt Logo</h1>
       <div class="under-bar"></div>

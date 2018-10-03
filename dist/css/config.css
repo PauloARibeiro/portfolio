@@ -273,6 +273,7 @@ nav {
       padding: 15px;
       color: #EBEBEB;
       background: #303139;
+      margin-right: 15px;
       transition: all 0.4s ease-in-out; }
       #more-info .holder a:hover {
         background: #3D3E47; }
@@ -489,14 +490,13 @@ nav {
     z-index: 1;
     width: 0;
     height: 0;
-    border-left: 100px
- solid transparent;
+    border-left: 100px solid transparent;
     border-right: 100px solid transparent;
     border-top: 100px solid #E6E6E6; }
   #contact .container {
     width: 60%; }
-  #contact .container .email-sent {
-    display: none; } 
+    #contact .container .email-sent {
+      display: none; }
   #contact form {
     position: relative; }
     #contact form label {
@@ -677,8 +677,7 @@ nav {
   #other-stuff #other-stuff-holder .other-content {
     display: block; }
   #contact .triangle-other {
-    border-left: 65px
- solid transparent;
+    border-left: 65px solid transparent;
     border-right: 65px solid transparent;
     border-top: 65px solid #E6E6E6; }
   #more-info .holder {
@@ -692,9 +691,14 @@ nav {
     font-size: 1.8rem; }
   #other-stuff #other-stuff-holder .other-content .other-text h3 {
     font-size: 1.8rem; }
+  #more-info .holder a {
+    text-align: center;
+    display: block;
+    margin-right: 0px; }
+    #more-info .holder a:nth-child(1) {
+      margin-bottom: 15px; }
   #contact .triangle-other {
-    border-left: 55px
- solid transparent;
+    border-left: 55px solid transparent;
     border-right: 55px solid transparent;
     border-top: 55px solid #E6E6E6; }
   #social-media .container {

@@ -228,6 +228,19 @@
     }
   }
 
+  #more-info{
+    .holder{
+      a{
+        text-align: center;
+        display: block;
+        margin-right: 0px;
+        &:nth-child(1){
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+
   // CONTACT TRIANGLE THING
   #contact{
     .triangle-other{
