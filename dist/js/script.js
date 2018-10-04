@@ -153,10 +153,11 @@ class MediaQueries {
     if (window.matchMedia("(max-width: 868px)").matches) {
       let contentHolder = document.querySelectorAll('.other-content');
       let content = document.querySelectorAll('.other-content div');
-      let googlePlay = document.querySelectorAll('#other-stuff #other-stuff-holder .other-content .other-text img');
+      let googlePlay = document.querySelectorAll('#other-stuff #other-stuff-holder .other-content .other-text a');
       let imgHolder = document.querySelectorAll('#other-stuff #other-stuff-holder .other-content .game-img');
 
       contentHolder[0].append(content[0]);
+
 
       imgHolder.forEach((imgHolder, i) =>{
         imgHolder.append(googlePlay[i]);

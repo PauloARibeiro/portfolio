@@ -201,8 +201,7 @@
             <h3>Bricks! Assemble</h3>
             <h5>Bricks Assemble is essentially a Tetris clone. Simple and clean, it also has an online leaderboard.</h5>
             <a href="https://play.google.com/store/apps/details?id=com.noRageStudio.BricksAssemble" target="_blank">
-              <img src="img/google-play-badge.png" alt="">
-            </a>
+              <img src="img/google-play-badge.png" alt=""></a>
           </div>
           <div class="game-img">
             <a href="https://play.google.com/store/apps/details?id=com.noRageStudio.BricksAssemble" target="_blank">
