@@ -135,10 +135,13 @@
       <div id="about-me-holder">
         <div id="about-me-info">
           <span>
-            I'm a Web Developer living in Portugal. I'm very passionate about front-end development and design. I also enjoy back-end development.
+            Hello, I'm a Web Developer currently living in Portugal. If you need a web developer I'm your guy.
           </span>
           <span>
-            When I'm not coding I like to play video games, go for walks or play guitar. I'm also very passionate about cooking.
+            Creating websites from scratch is a blast, whether front-web or back-end, the process of manifesting an idea from paper (or stone) to reality is awesome.
+          </span>
+          <span>
+            When I'm not coding I like to play video games, go for walks or play guitar. I also enjoy mixing some ingredients in a pan to create awesome flavors, in other words, cooking.
           </span>
           <span>Get in touch.</span>
           <!-- SOCIAL MEDIA CONTENT -->
@@ -148,7 +151,7 @@
           <a href="https://github.com/PauloARibeiro" target="_blank"> 
             <i class="fab fa-github-square fa-2x"></i>
           </a>
-          <a href="" target="_blank">
+          <a href="https://www.instagram.com/eggnator/" target="_blank">
             <i class="fab fa-instagram fa-2x"></i>
           </a>
           <a href="https://codepen.io/eggnator/" target="_blank">
@@ -239,7 +242,7 @@
       <a href="https://github.com/PauloARibeiro" target="_blank">
         <i class="fab fa-github-square fa-2x"></i>
       </a>
-      <a href="" target="_blank">
+      <a href="https://www.instagram.com/eggnator/" target="_blank">
         <i class="fab fa-instagram fa-2x"></i>
       </a>
       <a href="https://codepen.io/eggnator/" target="_blank">
