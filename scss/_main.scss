@@ -1,50 +1,50 @@
 // IMPORTS ANIMATIONS
-@import '_animations';
+@import "_animations";
 
-*{
+* {
   box-sizing: border-box;
 }
 // BODY
-body{
-  font-family: 'Montserrat', sans-serif;
+body {
+  font-family: "Montserrat", sans-serif;
   color: $dark-grey;
   background: $white;
 }
 
 //CONTENT CONTAINER
-.container{
+.container {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-  padding: 9vw 8vw;
+  padding: 15vw 8vw;
 }
 
 //SPACING
-.spacing{
-  height: 5.5vw;
+.spacing {
+  height: 6vw; 
   width: 100%;
 }
 
 //SHADOW
-.shadow{
-  -webkit-box-shadow: 2px 2px 9px 2px rgba(0,0,0,0.43);
-  -moz-box-shadow: 2px 2px 9px 2px rgba(0,0,0,0.43);
-  box-shadow: 2px 2px 9px 2px rgba(0,0,0,0.43);
+.shadow {
+  -webkit-box-shadow: 2px 2px 9px 2px rgba(0, 0, 0, 0.43);
+  -moz-box-shadow: 2px 2px 9px 2px rgba(0, 0, 0, 0.43);
+  box-shadow: 2px 2px 9px 2px rgba(0, 0, 0, 0.43);
 }
 
-.text-shadow{
+.text-shadow {
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.45);
 }
 
 // MOBILE NAV HOLDER
-#hamburger-holder{
+#hamburger-holder {
   position: fixed;
   width: 100%;
   z-index: 998;
   @include easeInOut;
 
   // HAMBURGER ICON
-  #hamburger{
+  #hamburger {
     display: none;
     position: fixed;
     z-index: 3;
@@ -53,7 +53,7 @@ body{
     cursor: pointer;
     @include easeInOut;
 
-    div{
+    div {
       width: 28px;
       height: 3px;
       margin: 0 0 5px 0;
@@ -62,19 +62,19 @@ body{
     }
 
     // HAMBURGER ICON ANIMATION
-    &.close{
-    transform: rotate(180deg);
-      div{
+    &.close {
+      transform: rotate(180deg);
+      div {
         //line one
-        &:nth-child(1){
+        &:nth-child(1) {
           transform: rotate(45deg) translate(5px, 5px);
         }
         //line two
-        &:nth-child(2){
+        &:nth-child(2) {
           opacity: 0;
         }
         //line three
-        &:nth-child(3){
+        &:nth-child(3) {
           transform: rotate(-45deg) translate(7px, -6px);
         }
       }
@@ -82,9 +82,8 @@ body{
   }
 }
 
-
 // NAV MENU
-nav{
+nav {
   padding: 1.2vw 8vw;
   position: fixed;
   width: 100%;
@@ -92,7 +91,7 @@ nav{
   z-index: 998;
   @include easeInOutSlow;
 
-  a{
+  a {
     float: right;
     text-decoration: none;
     color: $white;
@@ -101,26 +100,30 @@ nav{
     line-height: 1.35rem;
     @include easeInOut;
 
-    &:hover{
-      color:$green
+    &:hover {
+      color: $green;
     }
   }
 }
 
-#intro{
+#intro {
   background-attachment: fixed;
   position: relative;
   width: 100%;
   height: 100vh;
-  background: rgb(48,49,57);
-  background: linear-gradient(39deg, rgba(48,49,57,1) 0%, rgba(61,62,71,1) 80%);
+  background: rgb(48, 49, 57);
+  background: linear-gradient(
+    39deg,
+    rgba(48, 49, 57, 1) 0%,
+    rgba(61, 62, 71, 1) 80%
+  );
   color: $white;
   overflow: hidden;
-  -webkit-box-shadow: 2px 19px 27px -8px rgba(0,0,0,0.1);
-  -moz-box-shadow: 2px 19px 27px -8px rgba(0,0,0,0.1);
-  box-shadow: 2px 19px 27px -8px rgba(0,0,0,0.15);
+  -webkit-box-shadow: 2px 19px 27px -8px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 2px 19px 27px -8px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 19px 27px -8px rgba(0, 0, 0, 0.15);
 
-  .squares{
+  .squares {
     width: 100px;
     height: 100px;
     position: absolute;
@@ -129,24 +132,24 @@ nav{
     animation: fade 4s infinite;
     @include easeInOutSuperSlow;
   }
-  .squares-animation{
+  .squares-animation {
     animation: fade 2s infinite;
   }
 
-  .container{
+  .container {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
 
-    h1{
+    h1 {
       font-weight: bold;
       z-index: 3;
       font-size: 8vw;
       letter-spacing: 0.12rem;
       // @include easeOut;
     }
-    h4{
+    h4 {
       z-index: 3;
       margin-top: 10px;
       margin-left: 10px;
@@ -154,29 +157,29 @@ nav{
       line-height: 1.35rem;
       letter-spacing: 0.23px;
 
-      span{
+      span {
         color: $green;
       }
     }
   }
-
 }
 
 //THIS IS FOR EACH SECTION TITLE
-.section-title{
+.section-title {
   position: relative;
   //SECTION TITLE
-  h1{
+  h1 {
     text-align: center;
     font-size: 3.5rem;
     text-transform: uppercase;
     z-index: 2;
     padding-top: 1rem;
     letter-spacing: 0.3rem;
+    font-weight: bold;
   }
 
   // THIS IS FOR THE SHAPES INSIDE THE SECTION TITLE
-  .square{
+  .square {
     border-radius: 1.3px;
     width: 85px;
     height: 85px;
@@ -186,7 +189,7 @@ nav{
     transform: translate(-50%, 0%);
     z-index: -1;
   }
-  .circle{
+  .circle {
     border-radius: 50%;
     width: 85px;
     height: 85px;
@@ -208,26 +211,26 @@ nav{
     border-right: 50px solid transparent;
     border-bottom: 100px solid $light-red;
   }
-  .light-green{
+  .light-green {
     color: $light-green;
     background: $light-green;
   }
-  .light-yellow{
+  .light-yellow {
     background: $light-yellow;
     color: $light-yellow;
   }
-  .light-purple{
+  .light-purple {
     background: $light-purple;
     color: $light-purple;
   }
 }
 
 // THIS IS FOR THE SERVICES
-#services-holder{
+#services-holder {
   display: flex;
   justify-content: space-between;
   // SERVICE CONTENT
-  .service-content{
+  .service-content {
     padding: 0px 30px 0px 30px;
     max-width: 45%;
     border-radius: 1.3px;
@@ -235,25 +238,25 @@ nav{
     @include easeInOut;
 
     //SERVICES BORDER BOTTOM
-    &:nth-child(1){
+    &:nth-child(1) {
       border-bottom: 3px solid $blue;
     }
-    &:nth-child(2){
+    &:nth-child(2) {
       border-bottom: 3px solid $red;
     }
     //SERVICES ICON
-    .fas{
+    .fas {
       color: $light-grey;
     }
     //SERVICES TITLE
-    h3{
+    h3 {
       color: $light-grey;
       font-size: 2rem;
       text-transform: uppercase;
       margin: 15px 0px 30px;
     }
     //SERVICES CONTENT
-    p{
+    p {
       color: $lighter-grey;
       letter-spacing: 0.5px;
       font-weight: 300;
@@ -264,52 +267,52 @@ nav{
 }
 
 // PARALLAX BACKGROUND
-#parallax-content{
+#parallax-content {
   display: flex;
   justify-content: space-between;
 
-  .fab{
+  .fab {
     @include easeOut;
-    &:hover{
+    &:hover {
       transform: scale(1.051);
     }
-    &:nth-child(1){
-      color: #D1382B;
+    &:nth-child(1) {
+      color: #d1382b;
     }
-    &:nth-child(2){
-      color: #007DC6;
+    &:nth-child(2) {
+      color: #007dc6;
     }
-    &:nth-child(3){
-      color: #CF649A;
+    &:nth-child(3) {
+      color: #cf649a;
     }
-    &:nth-child(4){
-      color: #F58233;
+    &:nth-child(4) {
+      color: #f58233;
     }
-    &:nth-child(5){
-      color: #777BB3;
+    &:nth-child(5) {
+      color: #777bb3;
     }
   }
 }
-#parallax{
-  background: url('../img/paralax.jpg');
+#parallax {
+  background: url("../img/paralax.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
 
-  .container{
+  .container {
     padding: 30px 8vw;
   }
 }
 
-#work-about-holder{
-  background: url('../img/background-one.svg') no-repeat;
+#work-about-holder {
+  background: url("../img/background-one.svg") no-repeat;
   background-size: 100%;
 }
 // PORTFOLIO SECTION
-.show{
+.show {
   display: block;
 }
-#more-info{
+#more-info {
   // display: none;
   width: 100%;
   height: 100%;
@@ -319,7 +322,7 @@ nav{
   right: 100%;
   @include easeInOut;
 
-  .holder{
+  .holder {
     overflow-y: scroll;
     position: absolute;
     top: -100%;
@@ -328,53 +331,53 @@ nav{
     width: 75%;
     height: 100%;
     background-color: #ebebeb;
-background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000000' fill-opacity='0.02' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000000' fill-opacity='0.02' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
     padding: 8vw 8vw;
     border-radius: 1.6px;
     @include easeInOutSlow;
     transition-delay: 0.3s;
 
-    .fas{
+    .fas {
       position: absolute;
       right: 4%;
       top: 4%;
       cursor: pointer;
       @include easeInOut;
 
-      &:hover{
+      &:hover {
         transform: scale(1.1);
       }
     }
 
-    img{
+    img {
       opacity: 0;
       width: 100%;
       height: auto;
       margin-bottom: 3rem;
-      -webkit-box-shadow: 10px 10px 23px 4px rgba(0,0,0,0.08);
-      -moz-box-shadow: 10px 10px 23px 4px rgba(0,0,0,0.08);
-      box-shadow: 10px 10px 23px 4px rgba(0,0,0,0.08);
+      -webkit-box-shadow: 10px 10px 23px 4px rgba(0, 0, 0, 0.08);
+      -moz-box-shadow: 10px 10px 23px 4px rgba(0, 0, 0, 0.08);
+      box-shadow: 10px 10px 23px 4px rgba(0, 0, 0, 0.08);
     }
 
-    a{
+    a {
       cursor: pointer;
       text-decoration: none;
       padding: 15px;
       color: $white;
       background: $dark-grey;
-      margin-right: 15px;  
+      margin-right: 15px;
       @include easeInOutSlow;
 
-      &:hover{
+      &:hover {
         background: $light-grey;
       }
     }
 
-    .title{
+    .title {
       position: relative;
     }
 
-    .under-bar{
+    .under-bar {
       z-index: -1;
       bottom: 38%;
       left: -2%;
@@ -383,51 +386,51 @@ background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0
       height: 5.5px;
       background: rgba($green, 0.5);
     }
-    h1{
+    h1 {
       // word-wrap: break-word;
       color: $dark-grey;
       font-size: 3rem;
       margin: 6.3rem 0px 0.2rem;
     }
 
-    .description{
+    .description {
       font-size: 1.2rem;
       margin-bottom: 2rem;
       color: $light-grey;
     }
 
-    span{
+    span {
       font-size: 1.05rem;
       color: $lighter-grey;
       line-height: 1.2rem;
       letter-spacing: 0.02rem;
     }
 
-    .technologies{
+    .technologies {
       margin-top: 6rem;
       margin-bottom: 2rem;
     }
   }
-  #parallax-content{
+  #parallax-content {
     flex-wrap: wrap;
 
-    i{
-      &:last-child{
+    i {
+      &:last-child {
         margin-top: 8px;
       }
     }
   }
 }
-#portfolio{
+#portfolio {
   //PORTFOLIO CONTENT HOLDER
-  .portfolio-content{
+  .portfolio-content {
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
     justify-content: space-between;
 
     //PORTFOLIO CONTENT
-    .portfolio-img{
+    .portfolio-img {
       position: relative;
       cursor: pointer;
       // height: 219px;
@@ -436,17 +439,18 @@ background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0
       margin-bottom: 10px;
       overflow: hidden;
 
-      &:nth-child(1), &:nth-child(3){
+      &:nth-child(1),
+      &:nth-child(3) {
         padding-right: 10px;
       }
 
-      img{
+      img {
         height: 100%;
         width: 100%;
       }
 
       //PORTFOLIO OVERLAY
-      .portfolio-overlay{
+      .portfolio-overlay {
         position: absolute;
         top: 0;
         width: 100%;
@@ -456,18 +460,18 @@ background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0
         @include easeInOut;
       }
 
-      &:hover{
-        span{
+      &:hover {
+        span {
           opacity: 1;
           bottom: 50%;
         }
-      .portfolio-overlay{
-        opacity: 1;
-       }
+        .portfolio-overlay {
+          opacity: 1;
+        }
       }
 
       //PORTFOLIO CONTENT BUTTON
-      .portfolio-button{
+      .portfolio-button {
         opacity: 0;
         position: absolute;
         bottom: -12%;
@@ -486,19 +490,19 @@ background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0
   }
 }
 
-#about-me{
+#about-me {
   padding-top: 0vw;
 }
 // ABOUT ME SECTION
-#about-me-holder{
+#about-me-holder {
   display: flex;
 
-  #about-me-info{
+  #about-me-info {
     width: 50%;
     margin-right: 30px;
 
-    span{
-      &:nth-child(1){
+    span {
+      &:nth-child(1) {
         margin-top: 0px;
       }
       letter-spacing: 0.5px;
@@ -509,39 +513,39 @@ background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0
       display: block;
     }
 
-    a{
+    a {
       color: $dark-grey;
       text-decoration: none;
       margin-right: 20px;
       @include easeInOut;
 
-      &:hover{
+      &:hover {
         color: $blue;
       }
     }
   }
 
   // ABOUT ME PICTURE HOLDER
-  #about-me-picture{
+  #about-me-picture {
     position: relative;
     width: 50%;
 
-    &:hover{
-      .white-strip{
+    &:hover {
+      .white-strip {
         // opacity: 0;
         left: 0%;
       }
-      .rectangle-fill{
+      .rectangle-fill {
         top: -2%;
       }
     }
 
-    img{
+    img {
       border-radius: 1.3px;
       width: 100%;
     }
     // ABOUT ME RECTANGLE BACK
-    .rectangle-fill{
+    .rectangle-fill {
       @include easeInOut;
       position: absolute;
       z-index: -1;
@@ -552,7 +556,7 @@ background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0
       border: 2px $dark-grey solid;
     }
     //ABOUT ME WHITE STIP
-    .white-strip{
+    .white-strip {
       @include easeInOutSlow;
       // opacity: 1;
       position: absolute;
@@ -566,39 +570,39 @@ background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0
 }
 
 // OTHER STUFF SECTION
-#other-stuff{
-  background: url('../img/background-two.svg') no-repeat;
+#other-stuff {
+  background: url("../img/background-two.svg") no-repeat;
   background-position: 0% 136%;
   padding-top: 0px;
 
-  .container{
+  .container {
     padding-top: 0px;
   }
 
-  .margin-right{
+  .margin-right {
     margin-right: 30px;
   }
 
   // OTHER STUFF HOLDER
-  #other-stuff-holder{
-    .other-content{
+  #other-stuff-holder {
+    .other-content {
       position: relative;
       display: flex;
 
       // OTHER STUFF IMAGE LINK
-      div{
+      div {
         position: relative;
         width: 50%;
         margin-right: 30px;
         overflow: hidden;
         height: 100%;
 
-        &:hover{
-          span{
+        &:hover {
+          span {
             opacity: 1;
             bottom: 50%;
           }
-          .other-overlay{
+          .other-overlay {
             opacity: 1;
           }
         }
@@ -607,13 +611,13 @@ background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0
           margin-right: 0px;
         }
 
-        img{
+        img {
           border-radius: 1.3px;
           width: 100%;
           // height: 100%;
         }
 
-        span{
+        span {
           opacity: 0;
           position: absolute;
           bottom: -12%;
@@ -627,10 +631,9 @@ background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0
           text-decoration: none;
           cursor: pointer;
           @include easeInOutSlow;
-
         }
 
-        .other-overlay{
+        .other-overlay {
           width: 100%;
           height: 100%;
           background: rgba($light-red, 0.5);
@@ -641,12 +644,12 @@ background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0
         }
       }
 
-      .other-text{
+      .other-text {
         text-align: center;
         width: 50%;
 
         // OTHER STUFF TEXT
-        h3{
+        h3 {
           font-size: 2.5rem;
           text-transform: uppercase;
           margin-top: 300;
@@ -655,14 +658,14 @@ background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0
           color: $light-grey;
         }
 
-        h5{
+        h5 {
           letter-spacing: 0.5px;
           font-weight: 300;
           margin-bottom: 30px;
           line-height: 1.35rem;
           color: $lighter-grey;
         }
-        img{
+        img {
           width: 42%;
           height: auto;
           cursor: pointer;
@@ -672,18 +675,15 @@ background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0
   }
 }
 // CONTACT
-#contact{
+#contact {
   color: $white;
   position: relative;
   // background: $light-grey;
-  background: url('../img/pattern.png') repeat;
+  background: url("../img/pattern.png") repeat;
   background-attachment: fixed;
-  -webkit-box-shadow: 0px 10px 62px -106px rgba(0,0,0,0.1);
-  -moz-box-shadow: 0px 10px 62px -106px rgba(0,0,0,0.1);
-  box-shadow: 0px 10px 62px -106px rgba(0,0,0,0.1);
-
-
-
+  -webkit-box-shadow: 0px 10px 62px -106px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 10px 62px -106px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 10px 62px -106px rgba(0, 0, 0, 0.1);
 
   // UPSIDE DOWN TRIANGLE
   .triangle-other {
@@ -693,25 +693,24 @@ background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0
     z-index: 1;
     width: 0;
     height: 0;
-    border-left: 100px
-    solid transparent;
+    border-left: 100px solid transparent;
     border-right: 100px solid transparent;
-    border-top: 100px solid #E6E6E6;
+    border-top: 100px solid #e6e6e6;
   }
 
-  .container{
+  .container {
     width: 60%;
 
-    .email-sent{
-      display: none;  
+    .email-sent {
+      display: none;
     }
   }
 
-  form{
+  form {
     position: relative;
 
     // CONTACT LABEL
-    label{
+    label {
       display: block;
       margin-bottom: 10px;
       margin-top: 30px;
@@ -720,19 +719,20 @@ background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0
     }
 
     // CONTACT INPUT
-    input{
+    input {
       width: 100%;
       padding: 15px;
       color: $light-grey;
       font-size: 1.1rem;
       font-weight: 300;
 
-      &:active, &:focus{
+      &:active,
+      &:focus {
         outline: none;
       }
 
       // CONTACT SEND BUTTON
-      &[type="submit"]{
+      &[type="submit"] {
         left: 50%;
         bottom: -9.5%;
         transform: translate(-50%);
@@ -747,7 +747,7 @@ background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0
         font-size: 1rem;
         @include easeInOutSlow;
 
-        &:hover{
+        &:hover {
           background: $light-purple;
         }
       }
@@ -755,7 +755,7 @@ background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0
   }
 
   // CONTACT textarea
-  textarea{
+  textarea {
     resize: none;
     width: 100%;
     margin-bottom: 30px;
@@ -767,29 +767,29 @@ background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0
 }
 
 // SOCIAL MEDIA
-#social-media{
+#social-media {
   background: $dark-grey;
   color: $white;
   text-align: center;
 
-  .container{
+  .container {
     padding-top: 2vw;
     padding-bottom: 2vw;
   }
 
-  a{
+  a {
     color: $white;
     text-decoration: none;
     margin-right: 30px;
     @include easeInOut;
 
-    &:hover{
+    &:hover {
       color: $light-green;
     }
   }
 }
 
-#mobileMenu{
+#mobileMenu {
   z-index: 998;
   position: fixed;
   width: 100%;
@@ -799,12 +799,12 @@ background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0
   transform: translate3d(0, -100%, 0);
   @include easeInOutSlow;
 
-  nav{
+  nav {
     display: block;
     position: absolute;
     padding: 0;
     top: 30%;
-    a{
+    a {
       width: 100%;
       float: left;
       transform: translate3d(80%, 0, 0);
@@ -813,10 +813,10 @@ background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0
   }
 }
 
-@for $i from 1 through 5{
-  #mobileMenu nav a:nth-child(#{$i}){
+@for $i from 1 through 5 {
+  #mobileMenu nav a:nth-child(#{$i}) {
     transition-delay: $i * 0.125s;
   }
 }
 
-@import '_mediaQueries.scss';
+@import "_mediaQueries.scss";
