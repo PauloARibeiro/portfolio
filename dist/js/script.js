@@ -337,9 +337,34 @@ class MoreInfo {
       <i class="fab fa-css3 fa-5x text-shadow"></i>
       <i class="fab fa-js fa-5x text-shadow"></i>
       <i class="fab fa-php fa-5x text-shadow"></i>
-      </div>`
+      </div>`;
       break;
-      default:
+
+      case 3:
+      this.img.src = "img/tatsufood.jpg";
+      this.holder.querySelector('.content').innerHTML = `
+      <a href="tatsufood/index.php">View Page</a>
+      <a href="https://github.com/PauloARibeiro/Shirt-Logo" target="_blank">Source Code</a>
+      <div class="title">
+      <h1 >Tatsufood</h1>
+      <div class="under-bar"></div>
+      <h4 class="description">Description</h4>
+      </div>
+      <span>
+        Tatsufood is a restaurant website. It was built with HTML, SCSS, Javascript(es6). It's got all the information you would want from a restaurant, such as:
+        <br><br>
+        <li>Menu</li>
+        <li>Reservation</li>
+        <li>Schedule</li>
+      </span>
+      <h1 class="technologies">Technologies</h1>
+      <div id="parallax-content">
+      <i class="fab fa-html5 fa-5x text-shadow"></i>
+      <i class="fab fa-css3 fa-5x text-shadow"></i>
+      <i class="fab fa-js fa-5x text-shadow"></i>
+      <i class="fab fa-sass fa-5x text-shadow"></i>
+      </div>`;
+      break;
     }
     setTimeout(() =>{
       this.img.classList.add('fade');
